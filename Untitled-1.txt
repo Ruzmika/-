@@ -1,0 +1,25 @@
+print("Ноль в качестве знака операции"
+      "\nзавершит работу программы")
+while True:
+    s = input("Знак (+,-,*,/): ")
+    z = int(input("Vvedite kol-vo operation = "))
+    x = float(input("x="))
+    rez = x
+    for i in range(z):
+        y = float(input("y="))
+    if s == '0':
+        break
+    if s in ('+', '-', '*', '/'):
+        if s == '+':
+            print("%.2f" % (x+y))
+        elif s == '-':
+            print("%.2f" % (x-y))
+        elif s == '*':
+            print("%.2f" % (x*y))
+        elif s == '/':
+            if y != 0:
+                print("%.2f" % (x/y))
+            else:
+                print("Деление на ноль!")
+    else:
+        print("Неверный знак операции!")
